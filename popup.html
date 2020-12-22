@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Cookies fetcher</title>
+    <script src="popup.js"></script>
+    <style>
+      label {
+        margin-right: 20px;
+        font-weight: 500;
+        white-space: pre;
+      }
+      #cookies {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Auth Cookies</h1>
+    Login to Panaya site and then click on fetch cookies :)
+    <br/>
+    <br/>
+    <div id="cookies">
+      <label>"target":</label>"<span id="target"></span>",<br/>
+      <label>"token":</label>"<span id="XSRF-TOKEN"></span>",<br/>
+      <label>"ucn":</label>"<span id="ucn"></span>",<br/>
+      <label>"session":</label>"<span id="JSESSIONID"></span>"<br/>
+    </div>
+    <div id="empty">
+      Cookies are missing
+    </div>
+
+    <br/>
+    <br/>
+    <button id="checkPage">Fetch cookies</button>
+    <button id="copy">Copy to clipboard</button>
+  </body>
+</html>
